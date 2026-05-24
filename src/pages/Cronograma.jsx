@@ -241,15 +241,15 @@ export default function Cronograma() {
       {/* Add session modal */}
       {showForm && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-end justify-center p-4">
-          <div className="bg-white rounded-3xl p-5 w-full max-w-md max-h-[85vh] flex flex-col animate-fade-in-up">
-            <div className="flex items-center justify-between mb-4 flex-shrink-0">
+          <div className="bg-white rounded-3xl p-4 w-full max-w-md max-h-[80vh] flex flex-col animate-fade-in-up">
+            <div className="flex items-center justify-between mb-3 flex-shrink-0">
               <h3 className="text-base font-bold text-gray-800">Nova Sessão de Estudos</h3>
               <button onClick={() => setShowForm(false)}>
                 <X size={20} className="text-gray-400" />
               </button>
             </div>
 
-            <div className="space-y-3 overflow-y-auto flex-1 pr-1">
+            <div className="space-y-3 overflow-y-auto flex-1 pr-1 pb-2">
               <div>
                 <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Matéria</label>
                 <div className="mt-1.5 grid grid-cols-2 gap-1.5">
@@ -308,7 +308,7 @@ export default function Cronograma() {
 
             <button
               onClick={addSession}
-              className="w-full bg-purple-600 text-white rounded-xl py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-sm mt-4 flex-shrink-0"
+              className="w-full bg-purple-600 text-white rounded-xl py-3 font-semibold text-sm flex items-center justify-center gap-2 shadow-sm flex-shrink-0"
             >
               <Plus size={16} />
               Adicionar sessão

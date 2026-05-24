@@ -6,5 +6,11 @@
   "framework": "vite",
   "env": {
     "VITE_API_URL": "https://prevest-app-api.onrender.com"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

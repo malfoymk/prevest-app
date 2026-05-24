@@ -106,27 +106,27 @@ export default function Home() {
 
       {/* Stats row */}
       <div className="px-4 -mt-4 mb-4">
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 grid grid-cols-3 divide-x divide-gray-100">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 grid grid-cols-3 divide-x divide-gray-100">
           <div className="flex flex-col items-center px-2">
-            <div className="flex items-center gap-1 text-orange-500 mb-1">
-              <Flame size={18} strokeWidth={2.5} />
-              <span className="text-2xl font-bold text-gray-800">{streak}</span>
+            <div className="flex items-center gap-1.5 text-orange-500 mb-1.5">
+              <Flame size={20} strokeWidth={2.5} />
+              <span className="text-3xl font-bold text-gray-800">{streak}</span>
             </div>
-            <span className="text-xs text-gray-500 text-center">dias de sequência</span>
+            <span className="text-sm text-gray-500 text-center font-medium">dias de sequência</span>
           </div>
           <div className="flex flex-col items-center px-2">
-            <div className="flex items-center gap-1 text-blue-500 mb-1">
-              <Target size={18} strokeWidth={2.5} />
-              <span className="text-2xl font-bold text-gray-800">{totalQuestoes}</span>
+            <div className="flex items-center gap-1.5 text-blue-500 mb-1.5">
+              <Target size={20} strokeWidth={2.5} />
+              <span className="text-3xl font-bold text-gray-800">{totalQuestoes}</span>
             </div>
-            <span className="text-xs text-gray-500 text-center">questões respondidas</span>
+            <span className="text-sm text-gray-500 text-center font-medium">questões respondidas</span>
           </div>
           <div className="flex flex-col items-center px-2">
-            <div className="flex items-center gap-1 text-green-600 mb-1">
-              <Clock size={18} strokeWidth={2.5} />
-              <span className="text-2xl font-bold text-gray-800">{totalHoras.toFixed(0)}</span>
+            <div className="flex items-center gap-1.5 text-green-600 mb-1.5">
+              <Clock size={20} strokeWidth={2.5} />
+              <span className="text-3xl font-bold text-gray-800">{totalHoras.toFixed(0)}</span>
             </div>
-            <span className="text-xs text-gray-500 text-center">horas estudadas</span>
+            <span className="text-sm text-gray-500 text-center font-medium">horas estudadas</span>
           </div>
         </div>
       </div>
